@@ -132,6 +132,27 @@ Shared tokens and reusable components live in assets/css/style.css
 DEMO
 <img width="1883" height="902" alt="Screenshot 2026-07-04 234322" src="https://github.com/user-attachments/assets/ff2ec3c5-a187-44d1-9b97-354113c748f5" />
 
+<img width="1891" height="901" alt="Screenshot 2026-07-04 235014" src="https://github.com/user-attachments/assets/8c9a1baf-dd09-468c-ba99-4453afd90b55" />
+
+<img width="1902" height="903" alt="Screenshot 2026-07-04 235026" src="https://github.com/user-attachments/assets/54465496-2e17-4bae-a3f0-210c27b3613d" />
+
+
+
+<img width="1888" height="892" alt="Screenshot 2026-07-04 234336" src="https://github.com/user-attachments/assets/a57c47e7-afa2-4510-9677-e07b11ed73c6" />
+
+<img width="1841" height="897" alt="Screenshot 2026-07-04 234355" src="https://github.com/user-attachments/assets/70fa865e-3fa4-4807-8838-c07802dfcd29" />
+
+<img width="1893" height="853" alt="Screenshot 2026-07-04 234408" src="https://github.com/user-attachments/assets/385f81a5-cc1d-46da-a7b4-8805ba62de9f" />
+
+<img width="1878" height="901" alt="Screenshot 2026-07-04 234417" src="https://github.com/user-attachments/assets/ebf257a9-e0de-471c-a47a-bb7ded5c9b0b" />
+
+<img width="1877" height="898" alt="Screenshot 2026-07-04 234448" src="https://github.com/user-attachments/assets/b1411b02-d778-4e3c-b3a7-5ed2446742dc" />
+
+
+
+
+
+
 
 
 
