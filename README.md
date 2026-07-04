@@ -129,6 +129,11 @@ Primary: #FF6B35 · Secondary: #FFC107 · Accent: #E53935
 Background: #FFF8F2 · Cards: #FFFFFF
 Shared tokens and reusable components live in assets/css/style.css
 
+DEMO
+<img width="1883" height="902" alt="Screenshot 2026-07-04 234322" src="https://github.com/user-attachments/assets/ff2ec3c5-a187-44d1-9b97-354113c748f5" />
+
+
+
 
 📌 Notes
 index.jsp simply redirects to /home and is intentionally left unchanged.
