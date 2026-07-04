@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FoodyVibes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #e9ecee; color: #282c3f; }
+        
+        /* Navbar */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 10%; box-shadow: 0 15px 40px -20px rgba(40,44,63,.15); position: sticky; top: 0; background: #fff; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; color: #fc8019; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        
+        /* Layout */
+        .container { padding: 40px 10%; display: flex; gap: 30px; }
+        .left-col { flex: 2; }
+        .right-col { flex: 1; }
+        
+        /* Box Style */
+        .box { background: #fff; padding: 30px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .box-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+        
+        /* Account / Address */
+        .info-header { display: flex; gap: 20px; align-items: center; }
+        .info-icon { background: #282c3f; color: #fff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 5px rgba(0,0,0,0.1); }
+        .info-text h3 { font-size: 16px; margin-bottom: 4px; }
+        .info-text p { font-size: 14px; color: #686b78; }
+        
+        /* Cart Items */
+        .res-summary { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; border-bottom: 1px solid #e9e9eb; padding-bottom: 15px; }
+        .res-summary img { width: 50px; height: 50px; object-fit: cover; }
+        .res-summary-text h3 { font-size: 16px; margin-bottom: 4px; }
+        .res-summary-text p { font-size: 13px; color: #686b78; }
+        
+        .cart-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-size: 14px; color: #3e4152; }
+        .item-qty { border: 1px solid #d4d5d9; display: flex; align-items: center; width: 70px; justify-content: space-between; padding: 5px 8px; color: #1ba672; font-weight: 600; cursor: pointer; }
+        .item-price { font-weight: 500; }
+        
+        /* Bill Details */
+        .bill-details { font-size: 14px; color: #686b78; margin-top: 20px; border-top: 1px dashed #d4d5d9; padding-top: 15px; }
+        .bill-row { display: flex; justify-content: space-between; margin-bottom: 10px; }
+        .to-pay { display: flex; justify-content: space-between; font-weight: 600; color: #282c3f; font-size: 16px; border-top: 1px solid #e9e9eb; padding-top: 15px; margin-top: 15px; }
+        
+        /* Checkout btn */
+        .btn-checkout { display: block; text-align: center; width: 100%; background: #fc8019; color: #fff; text-decoration: none; padding: 15px; font-size: 16px; font-weight: 600; text-transform: uppercase; border: none; cursor: pointer; transition: background 0.3s; margin-top: 20px; }
+        .btn-checkout:hover { background: #e47315; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="restaurant.html" class="logo"><i class="fa-solid fa-burger"></i> FoodyVibes</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="left-col">
+            <div class="box">
+                <div class="info-header">
+                    <div class="info-icon"><i class="fa-regular fa-user"></i></div>
+                    <div class="info-text">
+                        <h3>Account</h3>
+                        <p>To place your order now, log in to your existing account or sign up.</p>
+                        <br>
+                        <a href="login.html" style="color: #fc8019; font-weight: 600; text-decoration: none; border: 1px solid #fc8019; padding: 8px 20px; display: inline-block;">LOG IN</a>
+                        <a href="register.html" style="color: #282c3f; font-weight: 600; text-decoration: none; border: 1px solid #d4d5d9; padding: 8px 20px; display: inline-block; margin-left: 10px;">SIGN UP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="opacity: 0.5;">
+                <div class="info-header">
+                    <div class="info-icon" style="background: #fff; color: #282c3f; border: 1px solid #e9e9eb;"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-text">
+                        <h3>Delivery address</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="opacity: 0.5;">
+                <div class="info-header">
+                    <div class="info-icon" style="background: #fff; color: #282c3f; border: 1px solid #e9e9eb;"><i class="fa-solid fa-wallet"></i></div>
+                    <div class="info-text">
+                        <h3>Payment</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="box">
+                <div class="res-summary">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1a8dfa8b2a73ddf7c6193465ab24c898" alt="Meghana Foods">
+                    <div class="res-summary-text">
+                        <h3>Meghana Foods</h3>
+                        <p>Koramangala</p>
+                    </div>
+                </div>
+
+                <!-- Static Cart Items -->
+                <div class="cart-item">
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <i class="fa-solid fa-circle" style="color: #0f8a65; font-size: 8px; border: 1px solid #0f8a65; padding: 2px;"></i> 
+                        Chicken Boneless Biryani
+                    </div>
+                    <div class="item-qty">
+                        <span>-</span><span>1</span><span>+</span>
+                    </div>
+                    <div class="item-price">₹350</div>
+                </div>
+
+                <div class="cart-item">
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <i class="fa-solid fa-circle" style="color: #0f8a65; font-size: 8px; border: 1px solid #0f8a65; padding: 2px;"></i> 
+                        Paneer Biryani
+                    </div>
+                    <div class="item-qty">
+                        <span>-</span><span>1</span><span>+</span>
+                    </div>
+                    <div class="item-price">₹280</div>
+                </div>
+
+                <div class="bill-details">
+                    <h4 style="color: #282c3f; margin-bottom: 10px;">Bill Details</h4>
+                    <div class="bill-row">
+                        <span>Item Total</span>
+                        <span>₹630</span>
+                    </div>
+                    <div class="bill-row">
+                        <span>Delivery Fee</span>
+                        <span>₹45</span>
+                    </div>
+                    <div class="bill-row">
+                        <span>Platform Fee</span>
+                        <span>₹5</span>
+                    </div>
+                    <div class="bill-row">
+                        <span>GST and Restaurant Charges</span>
+                        <span>₹31</span>
+                    </div>
+                </div>
+
+                <div class="to-pay">
+                    <span>TO PAY</span>
+                    <span>₹711</span>
+                </div>
+                
+                <a href="payment.html" class="btn-checkout">PROCEED TO PAY</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

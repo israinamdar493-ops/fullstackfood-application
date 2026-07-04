@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FoodyVibes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #f7f7f7; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .payment-container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        .payment-header { text-align: center; margin-bottom: 30px; }
+        .payment-header i { font-size: 40px; color: #24963f; margin-bottom: 15px; }
+        .payment-header h2 { font-size: 24px; font-weight: 600; color: #282c3f; }
+        .payment-header p { font-size: 14px; color: #686b78; margin-top: 5px; }
+        
+        .amount-box { text-align: center; background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px dashed #d4d5d9; }
+        .amount-box h3 { font-size: 28px; color: #282c3f; font-weight: 700; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 12px; color: #93959f; margin-bottom: 8px; font-weight: 500; }
+        .form-group select, .form-group input { width: 100%; padding: 12px 15px; border: 1px solid #d4d5d9; border-radius: 4px; font-size: 16px; outline: none; transition: border 0.3s; background: #fff; }
+        .form-group select:focus, .form-group input:focus { border-color: #fc8019; }
+        
+        .btn-pay { width: 100%; padding: 15px; background-color: #fc8019; color: white; border: none; border-radius: 4px; font-size: 16px; font-weight: 600; text-transform: uppercase; cursor: pointer; transition: background 0.3s; }
+        .btn-pay:hover { background-color: #e47315; }
+        
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #686b78; text-decoration: none; font-size: 14px; font-weight: 500; }
+        .back-link:hover { color: #fc8019; }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <div class="payment-header">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>Secure Checkout</h2>
+        <p>Complete your order securely</p>
+    </div>
+
+    <div class="amount-box">
+        <p style="font-size: 14px; color: #686b78; margin-bottom: 5px;">Amount to pay</p>
+        <h3>₹711</h3>
+    </div>
+
+    <form action="orderServlet" method="POST">
+        <div class="form-group">
+            <label>PAYMENT METHOD</label>
+            <select name="paymentMethod" required>
+                <option value="UPI">UPI (GPay, PhonePe, Paytm)</option>
+                <option value="CREDIT_CARD">Credit / Debit Card</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="CASH_ON_DELIVERY">Cash on Delivery</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn-pay">PAY ₹711 SECURELY</button>
+    </form>
+    
+    <a href="cart.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Go back to Cart</a>
+</div>
+
+</body>
+</html>
